@@ -8,8 +8,10 @@ public class Tester {
         System.out.println();
         for (int e: InsertionSort.sort(array)) System.out.printf("%d,", e);
         System.out.println();
-         */
         for (int e: ShellSort.sort(array)) System.out.printf("%d,", e);
+        System.out.println();
+         */
+        for (int e: SelectionSort.sort(array)) System.out.printf("%d,", e);
         System.out.println();
     }
 }
