@@ -6,8 +6,10 @@ public class Tester {
         System.out.println();
         for (int e: QuickSort.sort(array, 0, array.length-1)) System.out.printf("%d,", e);
         System.out.println();
-        */
         for (int e: InsertionSort.sort(array)) System.out.printf("%d,", e);
+        System.out.println();
+         */
+        for (int e: ShellSort.sort(array)) System.out.printf("%d,", e);
         System.out.println();
     }
 }
