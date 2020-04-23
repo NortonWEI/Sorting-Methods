@@ -9,7 +9,8 @@ public class Tester {
         System.out.println(Arrays.toString(InsertionSort.sort(array)));
         System.out.println(Arrays.toString(ShellSort.sort(array)));
         System.out.println(Arrays.toString(SelectionSort.sort(array)));
-         */
         System.out.println(Arrays.toString(MergeSort.sort(array)));
+         */
+        System.out.println(Arrays.toString(RadixSort.sort(array)));
     }
 }

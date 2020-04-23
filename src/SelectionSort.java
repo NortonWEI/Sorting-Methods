@@ -3,13 +3,13 @@ public class SelectionSort {
         if (array == null || array.length == 0) return array;
 
         for (int i=0; i<array.length; i++) {
-            int min_idx = i;
+            int minIdx = i;
             for (int j=i; j<array.length; j++) {
-                if (array[j] < array[min_idx]) {
-                    min_idx = j;
+                if (array[j] < array[minIdx]) {
+                    minIdx = j;
                 }
             }
-            Swap.swap(array, i, min_idx);
+            Swap.swap(array, i, minIdx);
         }
 
         return array;
