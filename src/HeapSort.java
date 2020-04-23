@@ -8,11 +8,11 @@ public class HeapSort {
         for(int i=array.length/2-1; i>=0; i--){
             heapify(array, i, array.length);
         }
-        
+
         for(int i=array.length-1; i>0; i--){
             // swap the maximum value with the last element in the array
             Swap.swap(array, 0, i);
-            // reconstruct max heap (only first element is required to move)
+            // reconstruct max heap (only the first element is required to move)
             heapify(array, 0, i);
         }
 
@@ -22,7 +22,7 @@ public class HeapSort {
     public static void heapify(int[] array, int i, int len){
         int temp = array[i];
         for(int k=i*2+1; k<len; k=k*2+1) { // start from the left child of i
-            // pick the largest value between the left and the right children
+            // pick the maximum between the left and the right children
             if(k+1 < len && array[k] < array[k+1]) {
                 k++;
             }
